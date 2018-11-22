@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         initdata();
+
         TestAdapter testAdapter = new TestAdapter(MainActivity.this, R.layout.item, list);
         recyclerView.setAdapter(testAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this, OrientationHelper.VERTICAL, false));

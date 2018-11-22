@@ -17,12 +17,6 @@ import java.util.List;
  */
 public class TestAdapter extends BaseRecyleViewAdapter<Person> {
 
-
-    /**
-     * @param context  //上下文
-     * @param layoutId //布局id
-     * @param data     //数据源
-     */
     public TestAdapter(Context context, int layoutId, List<Person> data) {
         super(context, layoutId, data);
 
