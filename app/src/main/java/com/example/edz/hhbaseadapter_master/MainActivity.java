@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         initdata();
-
-        TestAdapter testAdapter = new TestAdapter(MainActivity.this, R.layout.item, list);
+        TestAdapter testAdapter = new TestAdapter(MainActivity.this, R.layout.item, list,R.layout.header,R.layout.bottom);
         recyclerView.setAdapter(testAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this, OrientationHelper.VERTICAL, false));
 
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initdata() {
-
         for (int i = 0; i < 50; i++) {
             Person person = new Person();
             person.age = i;

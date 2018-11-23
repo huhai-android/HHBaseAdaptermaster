@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
     android:layout_height="30dp"
     tools:context=".MainActivity">
 
 
     <TextView
-        android:id="@+id/tv_text"
+        android:id="@+id/tv_buttom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="asadad" />
+        android:text="我是底部" />
 
 </android.support.constraint.ConstraintLayout>

@@ -34,4 +34,15 @@ public class BaseViewHolder extends RecyclerView.ViewHolder {
         img.setImageResource(resouceId);
     }
 
+    public void setOnCLickListener(int id,final OnClickListener listener){
+
+        convertView.findViewById(id).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onClick(v);
+            }
+        });
+    }
+
+
 }
